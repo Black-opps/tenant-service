@@ -9,6 +9,7 @@ from datetime import datetime
 import enum
 
 from ..core.database import Base
+from sqlalchemy import Column, String, DateTime, JSON, ForeignKey, Boolean, UniqueConstraint
 
 
 class Permission(str, enum.Enum):

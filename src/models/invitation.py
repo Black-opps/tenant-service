@@ -1,7 +1,7 @@
 """
 Invitation model for inviting users to tenant.
 """
-from sqlalchemy import Column, String, DateTime, ForeignKey, Boolean, Enum
+from sqlalchemy import Column, String, DateTime, ForeignKey, Boolean, Enum, JSON
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import relationship
 import uuid

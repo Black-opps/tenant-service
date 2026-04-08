@@ -7,6 +7,8 @@ from sqlalchemy.orm import relationship
 import uuid
 from datetime import datetime
 import enum
+from sqlalchemy import Integer, UniqueConstraint
+from sqlalchemy.types import JSON   # or from sqlalchemy.dialects.postgresql import JSONB if using PG JSONB
 
 from ..core.database import Base
 from ..core.security import get_password_hash

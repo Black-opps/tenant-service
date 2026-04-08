@@ -13,6 +13,7 @@ from ..core.exceptions import InvalidInvitationError, UserAlreadyExistsError
 from ..core.security import generate_invitation_token
 from ..services.user_manager import UserManager
 from ..services.email_service import EmailService
+from datetime import timedelta
 
 logger = logging.getLogger(__name__)
 
